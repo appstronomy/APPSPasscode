@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4EEA31821CF0C50B00D4ED0A /* APPSPasscode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA31811CF0C50B00D4ED0A /* APPSPasscode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EEA31D11CF0CAAD00D4ED0A /* APPSFormSheetTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA31B91CF0CAAD00D4ED0A /* APPSFormSheetTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EEA31D21CF0CAAD00D4ED0A /* APPSFormSheetTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA31BA1CF0CAAD00D4ED0A /* APPSFormSheetTransition.m */; };
+		4EEA31D31CF0CAAD00D4ED0A /* APPSNumericKeypadView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA31BB1CF0CAAD00D4ED0A /* APPSNumericKeypadView.h */; };
+		4EEA31D41CF0CAAD00D4ED0A /* APPSNumericKeypadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA31BC1CF0CAAD00D4ED0A /* APPSNumericKeypadView.m */; };
+		4EEA31D51CF0CAAD00D4ED0A /* APPSPasscodeCredentialsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA31BD1CF0CAAD00D4ED0A /* APPSPasscodeCredentialsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EEA31D61CF0CAAD00D4ED0A /* APPSPasscodeCredentialsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA31BE1CF0CAAD00D4ED0A /* APPSPasscodeCredentialsManager.m */; };
+		4EEA31D71CF0CAAD00D4ED0A /* APPSPasscodeEntryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA31BF1CF0CAAD00D4ED0A /* APPSPasscodeEntryViewController.h */; };
+		4EEA31D81CF0CAAD00D4ED0A /* APPSPasscodeEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA31C01CF0CAAD00D4ED0A /* APPSPasscodeEntryViewController.m */; };
+		4EEA31D91CF0CAAD00D4ED0A /* APPSPasscodeEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EEA31C11CF0CAAD00D4ED0A /* APPSPasscodeEntryViewController.xib */; };
+		4EEA31DA1CF0CAAD00D4ED0A /* APPSPasscodeEntryViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA31C21CF0CAAD00D4ED0A /* APPSPasscodeEntryViewControllerDelegate.h */; };
+		4EEA31DB1CF0CAAD00D4ED0A /* APPSPasscodeEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA31C31CF0CAAD00D4ED0A /* APPSPasscodeEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EEA31DC1CF0CAAD00D4ED0A /* APPSPasscodePresenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA31C41CF0CAAD00D4ED0A /* APPSPasscodePresenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EEA31DD1CF0CAAD00D4ED0A /* APPSPasscodeService.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA31C51CF0CAAD00D4ED0A /* APPSPasscodeService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EEA31DE1CF0CAAD00D4ED0A /* APPSPasscodeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA31C61CF0CAAD00D4ED0A /* APPSPasscodeService.m */; };
+		4EEA31DF1CF0CAAD00D4ED0A /* APPSPasscodeUsername.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA31C71CF0CAAD00D4ED0A /* APPSPasscodeUsername.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EEA31E01CF0CAAD00D4ED0A /* APPSPasscodeViewConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA31C81CF0CAAD00D4ED0A /* APPSPasscodeViewConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EEA31E11CF0CAAD00D4ED0A /* APPSPasscodeViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA31C91CF0CAAD00D4ED0A /* APPSPasscodeViewConfiguration.m */; };
+		4EEA31E21CF0CAAD00D4ED0A /* APPSPasscodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA31CA1CF0CAAD00D4ED0A /* APPSPasscodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EEA31E31CF0CAAD00D4ED0A /* APPSPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA31CB1CF0CAAD00D4ED0A /* APPSPasscodeViewController.m */; };
+		4EEA31E41CF0CAAD00D4ED0A /* APPSPasscodeViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA31CC1CF0CAAD00D4ED0A /* APPSPasscodeViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EEA31E51CF0CAAD00D4ED0A /* APPSSecurePlaceholderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA31CD1CF0CAAD00D4ED0A /* APPSSecurePlaceholderView.h */; };
+		4EEA31E61CF0CAAD00D4ED0A /* APPSSecurePlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA31CE1CF0CAAD00D4ED0A /* APPSSecurePlaceholderView.m */; };
+		4EEA31E71CF0CAAD00D4ED0A /* Icon-KeypadDelete-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EEA31CF1CF0CAAD00D4ED0A /* Icon-KeypadDelete-normal.png */; };
+		4EEA31E81CF0CAAD00D4ED0A /* Icon-KeypadDelete-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EEA31D01CF0CAAD00D4ED0A /* Icon-KeypadDelete-normal@2x.png */; };
+		4EEA31FB1CF0D1C900D4ED0A /* Lockbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA31F91CF0D1C900D4ED0A /* Lockbox.h */; };
+		4EEA31FC1CF0D1C900D4ED0A /* Lockbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA31FA1CF0D1C900D4ED0A /* Lockbox.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4EEA317E1CF0C50B00D4ED0A /* APPSPasscode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APPSPasscode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EEA31811CF0C50B00D4ED0A /* APPSPasscode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPSPasscode.h; sourceTree = "<group>"; };
+		4EEA31831CF0C50B00D4ED0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EEA31B91CF0CAAD00D4ED0A /* APPSFormSheetTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPSFormSheetTransition.h; sourceTree = "<group>"; };
+		4EEA31BA1CF0CAAD00D4ED0A /* APPSFormSheetTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPSFormSheetTransition.m; sourceTree = "<group>"; };
+		4EEA31BB1CF0CAAD00D4ED0A /* APPSNumericKeypadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPSNumericKeypadView.h; sourceTree = "<group>"; };
+		4EEA31BC1CF0CAAD00D4ED0A /* APPSNumericKeypadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPSNumericKeypadView.m; sourceTree = "<group>"; };
+		4EEA31BD1CF0CAAD00D4ED0A /* APPSPasscodeCredentialsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPSPasscodeCredentialsManager.h; sourceTree = "<group>"; };
+		4EEA31BE1CF0CAAD00D4ED0A /* APPSPasscodeCredentialsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPSPasscodeCredentialsManager.m; sourceTree = "<group>"; };
+		4EEA31BF1CF0CAAD00D4ED0A /* APPSPasscodeEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPSPasscodeEntryViewController.h; sourceTree = "<group>"; };
+		4EEA31C01CF0CAAD00D4ED0A /* APPSPasscodeEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPSPasscodeEntryViewController.m; sourceTree = "<group>"; };
+		4EEA31C11CF0CAAD00D4ED0A /* APPSPasscodeEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APPSPasscodeEntryViewController.xib; sourceTree = "<group>"; };
+		4EEA31C21CF0CAAD00D4ED0A /* APPSPasscodeEntryViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPSPasscodeEntryViewControllerDelegate.h; sourceTree = "<group>"; };
+		4EEA31C31CF0CAAD00D4ED0A /* APPSPasscodeEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPSPasscodeEnums.h; sourceTree = "<group>"; };
+		4EEA31C41CF0CAAD00D4ED0A /* APPSPasscodePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPSPasscodePresenter.h; sourceTree = "<group>"; };
+		4EEA31C51CF0CAAD00D4ED0A /* APPSPasscodeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPSPasscodeService.h; sourceTree = "<group>"; };
+		4EEA31C61CF0CAAD00D4ED0A /* APPSPasscodeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPSPasscodeService.m; sourceTree = "<group>"; };
+		4EEA31C71CF0CAAD00D4ED0A /* APPSPasscodeUsername.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPSPasscodeUsername.h; sourceTree = "<group>"; };
+		4EEA31C81CF0CAAD00D4ED0A /* APPSPasscodeViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPSPasscodeViewConfiguration.h; sourceTree = "<group>"; };
+		4EEA31C91CF0CAAD00D4ED0A /* APPSPasscodeViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPSPasscodeViewConfiguration.m; sourceTree = "<group>"; };
+		4EEA31CA1CF0CAAD00D4ED0A /* APPSPasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPSPasscodeViewController.h; sourceTree = "<group>"; };
+		4EEA31CB1CF0CAAD00D4ED0A /* APPSPasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPSPasscodeViewController.m; sourceTree = "<group>"; };
+		4EEA31CC1CF0CAAD00D4ED0A /* APPSPasscodeViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPSPasscodeViewControllerDelegate.h; sourceTree = "<group>"; };
+		4EEA31CD1CF0CAAD00D4ED0A /* APPSSecurePlaceholderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPSSecurePlaceholderView.h; sourceTree = "<group>"; };
+		4EEA31CE1CF0CAAD00D4ED0A /* APPSSecurePlaceholderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPSSecurePlaceholderView.m; sourceTree = "<group>"; };
+		4EEA31CF1CF0CAAD00D4ED0A /* Icon-KeypadDelete-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-KeypadDelete-normal.png"; sourceTree = "<group>"; };
+		4EEA31D01CF0CAAD00D4ED0A /* Icon-KeypadDelete-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-KeypadDelete-normal@2x.png"; sourceTree = "<group>"; };
+		4EEA31F91CF0D1C900D4ED0A /* Lockbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lockbox.h; sourceTree = "<group>"; };
+		4EEA31FA1CF0D1C900D4ED0A /* Lockbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lockbox.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EEA317A1CF0C50B00D4ED0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EEA31741CF0C50B00D4ED0A = {
+			isa = PBXGroup;
+			children = (
+				4EEA31801CF0C50B00D4ED0A /* APPSPasscode */,
+				4EEA317F1CF0C50B00D4ED0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4EEA317F1CF0C50B00D4ED0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EEA317E1CF0C50B00D4ED0A /* APPSPasscode.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EEA31801CF0C50B00D4ED0A /* APPSPasscode */ = {
+			isa = PBXGroup;
+			children = (
+				4EEA31811CF0C50B00D4ED0A /* APPSPasscode.h */,
+				4EEA31C31CF0CAAD00D4ED0A /* APPSPasscodeEnums.h */,
+				4EEA31F71CF0D1C900D4ED0A /* External */,
+				4EEA31ED1CF0CB0400D4ED0A /* Protocols */,
+				4EEA31EE1CF0CB0E00D4ED0A /* Service */,
+				4EEA31EB1CF0CAD400D4ED0A /* Credentials Manager */,
+				4EEA31EF1CF0CB1900D4ED0A /* Configuration */,
+				4EEA31E91CF0CAB300D4ED0A /* Transitions */,
+				4EEA31EA1CF0CAC900D4ED0A /* Views */,
+				4EEA31EC1CF0CAE700D4ED0A /* View Controllers */,
+				4EEA31F01CF0CB2900D4ED0A /* Resources */,
+				4EEA31831CF0C50B00D4ED0A /* Info.plist */,
+			);
+			path = APPSPasscode;
+			sourceTree = "<group>";
+		};
+		4EEA31E91CF0CAB300D4ED0A /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				4EEA31B91CF0CAAD00D4ED0A /* APPSFormSheetTransition.h */,
+				4EEA31BA1CF0CAAD00D4ED0A /* APPSFormSheetTransition.m */,
+			);
+			name = Transitions;
+			sourceTree = "<group>";
+		};
+		4EEA31EA1CF0CAC900D4ED0A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4EEA31BB1CF0CAAD00D4ED0A /* APPSNumericKeypadView.h */,
+				4EEA31BC1CF0CAAD00D4ED0A /* APPSNumericKeypadView.m */,
+				4EEA31CD1CF0CAAD00D4ED0A /* APPSSecurePlaceholderView.h */,
+				4EEA31CE1CF0CAAD00D4ED0A /* APPSSecurePlaceholderView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4EEA31EB1CF0CAD400D4ED0A /* Credentials Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4EEA31BD1CF0CAAD00D4ED0A /* APPSPasscodeCredentialsManager.h */,
+				4EEA31BE1CF0CAAD00D4ED0A /* APPSPasscodeCredentialsManager.m */,
+			);
+			name = "Credentials Manager";
+			sourceTree = "<group>";
+		};
+		4EEA31EC1CF0CAE700D4ED0A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4EEA31BF1CF0CAAD00D4ED0A /* APPSPasscodeEntryViewController.h */,
+				4EEA31C01CF0CAAD00D4ED0A /* APPSPasscodeEntryViewController.m */,
+				4EEA31C11CF0CAAD00D4ED0A /* APPSPasscodeEntryViewController.xib */,
+				4EEA31CA1CF0CAAD00D4ED0A /* APPSPasscodeViewController.h */,
+				4EEA31CB1CF0CAAD00D4ED0A /* APPSPasscodeViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4EEA31ED1CF0CB0400D4ED0A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4EEA31C21CF0CAAD00D4ED0A /* APPSPasscodeEntryViewControllerDelegate.h */,
+				4EEA31C41CF0CAAD00D4ED0A /* APPSPasscodePresenter.h */,
+				4EEA31C71CF0CAAD00D4ED0A /* APPSPasscodeUsername.h */,
+				4EEA31CC1CF0CAAD00D4ED0A /* APPSPasscodeViewControllerDelegate.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		4EEA31EE1CF0CB0E00D4ED0A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4EEA31C51CF0CAAD00D4ED0A /* APPSPasscodeService.h */,
+				4EEA31C61CF0CAAD00D4ED0A /* APPSPasscodeService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		4EEA31EF1CF0CB1900D4ED0A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				4EEA31C81CF0CAAD00D4ED0A /* APPSPasscodeViewConfiguration.h */,
+				4EEA31C91CF0CAAD00D4ED0A /* APPSPasscodeViewConfiguration.m */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		4EEA31F01CF0CB2900D4ED0A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4EEA31CF1CF0CAAD00D4ED0A /* Icon-KeypadDelete-normal.png */,
+				4EEA31D01CF0CAAD00D4ED0A /* Icon-KeypadDelete-normal@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4EEA31F71CF0D1C900D4ED0A /* External */ = {
+			isa = PBXGroup;
+			children = (
+				4EEA31F81CF0D1C900D4ED0A /* Lockbox */,
+			);
+			path = External;
+			sourceTree = SOURCE_ROOT;
+		};
+		4EEA31F81CF0D1C900D4ED0A /* Lockbox */ = {
+			isa = PBXGroup;
+			children = (
+				4EEA31F91CF0D1C900D4ED0A /* Lockbox.h */,
+				4EEA31FA1CF0D1C900D4ED0A /* Lockbox.m */,
+			);
+			path = Lockbox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4EEA317B1CF0C50B00D4ED0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EEA31D31CF0CAAD00D4ED0A /* APPSNumericKeypadView.h in Headers */,
+				4EEA31D51CF0CAAD00D4ED0A /* APPSPasscodeCredentialsManager.h in Headers */,
+				4EEA31DD1CF0CAAD00D4ED0A /* APPSPasscodeService.h in Headers */,
+				4EEA31E01CF0CAAD00D4ED0A /* APPSPasscodeViewConfiguration.h in Headers */,
+				4EEA31D11CF0CAAD00D4ED0A /* APPSFormSheetTransition.h in Headers */,
+				4EEA31DC1CF0CAAD00D4ED0A /* APPSPasscodePresenter.h in Headers */,
+				4EEA31E21CF0CAAD00D4ED0A /* APPSPasscodeViewController.h in Headers */,
+				4EEA31E41CF0CAAD00D4ED0A /* APPSPasscodeViewControllerDelegate.h in Headers */,
+				4EEA31DF1CF0CAAD00D4ED0A /* APPSPasscodeUsername.h in Headers */,
+				4EEA31DB1CF0CAAD00D4ED0A /* APPSPasscodeEnums.h in Headers */,
+				4EEA31821CF0C50B00D4ED0A /* APPSPasscode.h in Headers */,
+				4EEA31FB1CF0D1C900D4ED0A /* Lockbox.h in Headers */,
+				4EEA31E51CF0CAAD00D4ED0A /* APPSSecurePlaceholderView.h in Headers */,
+				4EEA31D71CF0CAAD00D4ED0A /* APPSPasscodeEntryViewController.h in Headers */,
+				4EEA31DA1CF0CAAD00D4ED0A /* APPSPasscodeEntryViewControllerDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4EEA317D1CF0C50B00D4ED0A /* APPSPasscode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EEA31861CF0C50B00D4ED0A /* Build configuration list for PBXNativeTarget "APPSPasscode" */;
+			buildPhases = (
+				4EEA31791CF0C50B00D4ED0A /* Sources */,
+				4EEA317A1CF0C50B00D4ED0A /* Frameworks */,
+				4EEA317B1CF0C50B00D4ED0A /* Headers */,
+				4EEA317C1CF0C50B00D4ED0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APPSPasscode;
+			productName = APPSPasscode;
+			productReference = 4EEA317E1CF0C50B00D4ED0A /* APPSPasscode.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EEA31751CF0C50B00D4ED0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Appstronomy;
+				TargetAttributes = {
+					4EEA317D1CF0C50B00D4ED0A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4EEA31781CF0C50B00D4ED0A /* Build configuration list for PBXProject "APPSPasscode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4EEA31741CF0C50B00D4ED0A;
+			productRefGroup = 4EEA317F1CF0C50B00D4ED0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EEA317D1CF0C50B00D4ED0A /* APPSPasscode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EEA317C1CF0C50B00D4ED0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EEA31E71CF0CAAD00D4ED0A /* Icon-KeypadDelete-normal.png in Resources */,
+				4EEA31E81CF0CAAD00D4ED0A /* Icon-KeypadDelete-normal@2x.png in Resources */,
+				4EEA31D91CF0CAAD00D4ED0A /* APPSPasscodeEntryViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EEA31791CF0C50B00D4ED0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EEA31D41CF0CAAD00D4ED0A /* APPSNumericKeypadView.m in Sources */,
+				4EEA31D81CF0CAAD00D4ED0A /* APPSPasscodeEntryViewController.m in Sources */,
+				4EEA31FC1CF0D1C900D4ED0A /* Lockbox.m in Sources */,
+				4EEA31DE1CF0CAAD00D4ED0A /* APPSPasscodeService.m in Sources */,
+				4EEA31E11CF0CAAD00D4ED0A /* APPSPasscodeViewConfiguration.m in Sources */,
+				4EEA31D61CF0CAAD00D4ED0A /* APPSPasscodeCredentialsManager.m in Sources */,
+				4EEA31D21CF0CAAD00D4ED0A /* APPSFormSheetTransition.m in Sources */,
+				4EEA31E31CF0CAAD00D4ED0A /* APPSPasscodeViewController.m in Sources */,
+				4EEA31E61CF0CAAD00D4ED0A /* APPSSecurePlaceholderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4EEA31841CF0C50B00D4ED0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4EEA31851CF0C50B00D4ED0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4EEA31871CF0C50B00D4ED0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = APPSPasscode/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appstronomy.APPSPasscode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4EEA31881CF0C50B00D4ED0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = APPSPasscode/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appstronomy.APPSPasscode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EEA31781CF0C50B00D4ED0A /* Build configuration list for PBXProject "APPSPasscode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EEA31841CF0C50B00D4ED0A /* Debug */,
+				4EEA31851CF0C50B00D4ED0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EEA31861CF0C50B00D4ED0A /* Build configuration list for PBXNativeTarget "APPSPasscode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EEA31871CF0C50B00D4ED0A /* Debug */,
+				4EEA31881CF0C50B00D4ED0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EEA31751CF0C50B00D4ED0A /* Project object */;
+}
