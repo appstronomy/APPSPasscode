@@ -110,7 +110,9 @@ static const CGFloat kNumericKeypadSubtitleTextHeight      = 15.0;
         return _deleteKeyImage;
     }
     
-    return [UIImage imageNamed:@"Icon-KeypadDelete-normal"];
+    return [UIImage imageNamed:@"Icon-KeypadDelete-normal"
+                      inBundle:[NSBundle bundleForClass:self.class]
+ compatibleWithTraitCollection:nil];
 }
 
 

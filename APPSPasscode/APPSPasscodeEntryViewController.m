@@ -303,7 +303,11 @@ static const NSTimeInterval kPasscodeResetDelay             = 0.25;
     self.logoToInstructionLabelConstraint.constant  = viewConfig ? viewConfig.logoToInstructionLabelSpacing : 15;
     self.logoImageView.image                        = viewConfig.logoImage;
     
-    NSAssert(self.logoImageView.image != nil, @"A logo image is required for the passcode view contoller. This is specified as part of the viewConfiguration.");
+    if (self.logoImageView.image == nil) {
+        self.logoImageView.image = [UIImage imageNamed:@"DefaultLogo"
+                                              inBundle:[NSBundle bundleForClass:self.class]
+                         compatibleWithTraitCollection:nil];
+    }
     
     [self.view setNeedsDisplay];
 }
