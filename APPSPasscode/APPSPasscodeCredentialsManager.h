@@ -32,16 +32,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)passcodeExistsForUser:(id <APPSPasscodeUsername>)user;
 
-- (BOOL)authorizePasscode:(NSString *)passcode
+- (BOOL)authorizePasscode:(nullable NSString *)passcode
                   forUser:(id <APPSPasscodeUsername>)user;
 
 - (BOOL)allowPasscodeToChangeFrom:(nullable NSString *)fromPasscode
-                               to:(NSString *)toPasscode
+                               to:(nullable NSString *)toPasscode
                           forUser:(id <APPSPasscodeUsername>)user
                     reasonMessage:(NSString *__nullable __autoreleasing * __nullable)reasonMessage;
 
 - (BOOL)setPasscodeFrom:(nullable NSString *)fromPasscode
-                     to:(NSString *)toPasscode
+                     to:(nullable NSString *)toPasscode
                 forUser:(id <APPSPasscodeUsername>)user;
 
 - (void)removePasscodeForUser:(id <APPSPasscodeUsername>)user;
@@ -57,7 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setPasscode:(nullable NSString *)passcode
         forUsername:(NSString *)username;
 
-- (BOOL)isAllowablePasscode:(NSString *)passcode;
+- (BOOL)isAllowablePasscode:(nullable NSString *)passcode;
 
 
 
