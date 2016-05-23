@@ -10,6 +10,8 @@
 
 #import "APPSPasscodeViewControllerDelegate.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  Different modes for the passcode view controller.  The mode will determine
  how the view controller functions.
@@ -88,7 +90,10 @@ typedef NS_ENUM(NSUInteger, APPSPasscodeMode) {
 /**
  The view configuration for the new view controller
  */
-@property (copy, nonatomic) APPSPasscodeViewConfiguration *viewConfiguration;
+@property (nullable, copy, nonatomic) APPSPasscodeViewConfiguration *viewConfiguration;
 
 
 @end
+
+NS_ASSUME_NONNULL_END
+

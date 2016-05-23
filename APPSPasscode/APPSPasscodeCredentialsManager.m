@@ -8,8 +8,6 @@
 #import "APPSPasscodeCredentialsManager.h"
 #import "Lockbox.h"
 
-const NSUInteger ICPDPasscodeManagerFailedAuthorizationAttemptMax = 5;
-
 static NSString * const APPSPasscodeKeyName = @"_APPSPinPasscode";
 
 @implementation APPSPasscodeCredentialsManager

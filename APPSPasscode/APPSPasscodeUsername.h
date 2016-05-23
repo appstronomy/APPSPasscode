@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  This protocol defines the necessary fields to implement a password model.
  */
@@ -24,3 +26,5 @@
 - (NSString *)username;
 
 @end
+
+NS_ASSUME_NONNULL_END

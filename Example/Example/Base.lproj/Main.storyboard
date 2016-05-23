@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Initial View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="InitialViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gSW-CQ-xlC">
+                                <rect key="frame" x="169" y="60" width="262" height="500"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="w10-GK-IEB">
+                                        <rect key="frame" x="36" y="0.0" width="191" height="29"/>
+                                        <segments>
+                                            <segment title="Default Style"/>
+                                            <segment title="Custom Style"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="handleStyleControlTap:" destination="BYZ-38-t0r" eventType="valueChanged" id="cSa-Dz-4Vl"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your protected content goes here." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1K-rZ-FS8">
+                                        <rect key="frame" x="0.0" y="211" width="262" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2VV-nO-qGI">
+                                        <rect key="frame" x="63" y="356" width="136" height="144"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkD-dg-dEC">
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="30"/>
+                                                <state key="normal" title="Set Passcode"/>
+                                                <connections>
+                                                    <action selector="handleSetPasscodeButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="R0f-jX-mJn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6v-oR-ggX">
+                                                <rect key="frame" x="0.0" y="38" width="136" height="30"/>
+                                                <state key="normal" title="Update Passcode"/>
+                                                <connections>
+                                                    <action selector="handleUpdatePasscodeButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gc7-6V-irk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ius-2I-IdB">
+                                                <rect key="frame" x="0.0" y="76" width="136" height="30"/>
+                                                <state key="normal" title="Authorize Passcode"/>
+                                                <connections>
+                                                    <action selector="handleAuthorizePasscodeButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rxi-dQ-zGt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sz-09-pF1">
+                                                <rect key="frame" x="0.0" y="114" width="136" height="30"/>
+                                                <state key="normal" title="Clear Passcode"/>
+                                                <connections>
+                                                    <action selector="handleClearPasscodeButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="CRo-0z-m0N"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gSW-CQ-xlC" secondAttribute="bottom" constant="40" id="2yY-NV-oqj"/>
+                            <constraint firstItem="gSW-CQ-xlC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="LAP-x0-ahp"/>
+                            <constraint firstItem="gSW-CQ-xlC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bJL-HO-pPn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authorizePasscodeButton" destination="ius-2I-IdB" id="Bcg-1z-6Ih"/>
+                        <outlet property="clearPasscodeButton" destination="6sz-09-pF1" id="MyC-0Y-sgC"/>
+                        <outlet property="setPasscodeButton" destination="mkD-dg-dEC" id="dyc-B5-e8I"/>
+                        <outlet property="styleControl" destination="w10-GK-IEB" id="KLW-eq-jlF"/>
+                        <outlet property="updatePasscodeButton" destination="T6v-oR-ggX" id="2ZU-9B-vR3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="437"/>
+        </scene>
+    </scenes>
+</document>

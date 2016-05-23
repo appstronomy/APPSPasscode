@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
 
 /**
  An instance of @c APPSPasscodeViewConfiguration is used to hold visual
@@ -30,27 +31,27 @@
 
 @interface APPSPasscodeViewConfiguration : NSObject <NSCopying>
 
-@property (nonatomic, strong) UIColor *rootViewBackgroundColor;
+@property (nullable, nonatomic, strong) UIColor *rootViewBackgroundColor;
 
-@property (nonatomic, strong) UIColor *messageContainerBackgroundColor;
+@property (nullable, nonatomic, strong) UIColor *messageContainerBackgroundColor;
 
-@property (nonatomic, strong) UIColor *keypadBackgroundColor;
+@property (nullable, nonatomic, strong) UIColor *keypadBackgroundColor;
 
-@property (nonatomic, strong) UIColor *keypadNumericKeyDefaultColor;
+@property (nullable, nonatomic, strong) UIColor *keypadNumericKeyDefaultColor;
 
-@property (nonatomic, strong) UIColor *keypadNumericKeyHighlightColor;
+@property (nullable, nonatomic, strong) UIColor *keypadNumericKeyHighlightColor;
 
-@property (nonatomic, strong) UIColor *keypadTextColor;
+@property (nullable, nonatomic, strong) UIColor *keypadTextColor;
 
-@property (nonatomic, strong) UIColor *instructionTextColor;
+@property (nullable, nonatomic, strong) UIColor *instructionTextColor;
 
-@property (nonatomic, strong) UIColor *errorTextColor;
+@property (nullable, nonatomic, strong) UIColor *errorTextColor;
 
-@property (nonatomic, strong) UIColor *bulletColor;
+@property (nullable, nonatomic, strong) UIColor *bulletColor;
 
-@property (nonatomic, strong) UIImage *deleteKeyImage;
+@property (nullable, nonatomic, strong) UIImage *deleteKeyImage;
 
-@property (nonatomic, strong) UIImage *logoImage;
+@property (nullable, nonatomic, strong) UIImage *logoImage;
 
 @property (nonatomic) CGFloat topToLogoSpacing;
 
@@ -67,7 +68,9 @@
  The keys are of type @c APPSNumericKeypadKey from @c APPSPasscodeEnums.h.
  Any keys not specified will use keypadNumericKeyDefaultColor.
  */
-@property (nonatomic, copy) NSDictionary<NSNumber*, UIColor*> *customKeyColors;
+@property (nullable, nonatomic, copy) NSDictionary<NSNumber*, UIColor*> *customKeyColors;
 
 @end
+
+NS_ASSUME_NONNULL_END
 

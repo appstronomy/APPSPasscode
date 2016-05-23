@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class APPSPasscodeViewController;
 
 
@@ -184,9 +186,9 @@
             set to a non-nil value.
  */
 - (BOOL)passcodeViewController:(APPSPasscodeViewController *)passcodeViewController
-        willUpdateFromPasscode:(NSString *)fromPasscode
+        willUpdateFromPasscode:(nullable NSString *)fromPasscode
                     toPasscode:(NSString *)toPasscode
-                  errorMessage:(NSString *__autoreleasing *)errorMessage;
+                  errorMessage:(NSString *__nullable __autoreleasing * __nullable)errorMessage;
 
 
 /**
@@ -205,7 +207,10 @@
                                 by the delegate.
  */
 - (void)passcodeViewController:(APPSPasscodeViewController *)passcodeViewController
-         didUpdateFromPasscode:(NSString *)fromPasscode
+         didUpdateFromPasscode:(nullable NSString *)fromPasscode
                     toPasscode:(NSString *)toPasscode;
 
 @end
+
+
+NS_ASSUME_NONNULL_END

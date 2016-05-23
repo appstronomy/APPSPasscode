@@ -9,11 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "APPSPasscodeUsername.h"
 
-@class ICPDClinician;
-
-
-
-extern const NSUInteger ICPDPasscodeManagerFailedAuthorizationAttemptMax;
+NS_ASSUME_NONNULL_BEGIN
 
 /**
  This class is intended to manage the storage, retrieval, and authorization of
@@ -39,12 +35,12 @@ extern const NSUInteger ICPDPasscodeManagerFailedAuthorizationAttemptMax;
 - (BOOL)authorizePasscode:(NSString *)passcode
                   forUser:(id <APPSPasscodeUsername>)user;
 
-- (BOOL)allowPasscodeToChangeFrom:(NSString *)fromPasscode
+- (BOOL)allowPasscodeToChangeFrom:(nullable NSString *)fromPasscode
                                to:(NSString *)toPasscode
                           forUser:(id <APPSPasscodeUsername>)user
-                    reasonMessage:(NSString *__autoreleasing *)reasonMessage;
+                    reasonMessage:(NSString *__nullable __autoreleasing * __nullable)reasonMessage;
 
-- (BOOL)setPasscodeFrom:(NSString *)fromPasscode
+- (BOOL)setPasscodeFrom:(nullable NSString *)fromPasscode
                      to:(NSString *)toPasscode
                 forUser:(id <APPSPasscodeUsername>)user;
 
@@ -54,11 +50,11 @@ extern const NSUInteger ICPDPasscodeManagerFailedAuthorizationAttemptMax;
 
 #pragma mark - Passcode Management
 
-- (NSString *)passcodeForUsername:(NSString *)username;
+- (nullable NSString *)passcodeForUsername:(NSString *)username;
 - (NSString *)lookupKeyForUsername:(NSString *)username;
 
 
-- (void)setPasscode:(NSString *)passcode
+- (void)setPasscode:(nullable NSString *)passcode
         forUsername:(NSString *)username;
 
 - (BOOL)isAllowablePasscode:(NSString *)passcode;
@@ -66,3 +62,5 @@ extern const NSUInteger ICPDPasscodeManagerFailedAuthorizationAttemptMax;
 
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -9,6 +9,8 @@
 #import "APPSPasscodePresenter.h"
 #import "APPSPasscodeViewControllerDelegate.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  Responsible for asking the app's root view controller to present or 
  dismiss a Passcode View Controller. Listens for app lifecycle events
@@ -35,7 +37,9 @@
  
  We'll set this once you have our @c window property set.
  */
-@property (weak, nonatomic, readonly) UIViewController<APPSPasscodePresenter> *rootViewController;
+@property (weak, nonatomic, readonly) id<APPSPasscodePresenter> rootViewController;
 
 
 @end
+
+NS_ASSUME_NONNULL_END
