@@ -4,7 +4,15 @@
 [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=5743719adb87810100cb593c&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/5743719adb87810100cb593c/build/latest)
 
 # Introduction
-A reusable passcode subsystem for iOS apps. 
+A reusable passcode subsystem for iOS apps. This is used as a passcode foundation by [Appstronomy](http://appstronomy.com) for our own internal and client projects. We wanted to share our solution to a common need.
+
+Originally built in Objective-C, this framework will also work well in your Swift based apps, as demonstrated by our example Swift app bundled with this repo. The example app shows you how you might use the APPSPasscode framework, including how to customize it.
+
+## Demo Gallery
+
+The following animation takes you through the capabilities of the Example app bundled inside this repo. Here, you'll see the default and custom visual styles.
+
+![Example App Demo](APPSPasscodeDemo.gif)
 
 ## Default and Custom Styles
 You can change the visual appearance of the passcode (lines, colors, images) as suits the needs of your app. While the default style mimics Apple's own native iOS passcode control, we don't recommend you ship using that default style. It's only an example to provide you with a familiar starting point.
@@ -74,4 +82,4 @@ That said, you can ignore that default dependency and choose to use another tool
 # Credits
 The original passcode subsystem was built for [Appstronomy](http://appstronomy.com) by [Chris Morris](http://www.chrismorris.net/Site/Home.html) in 2014.
 
-Later enhancements were made by [Ken Grigsby](https://github.com/kgrigsby59) and [Sohail Ahmed](http://sohail.io). UI/UX guidance was provided by [Salman Sajid](http://www.sajid.com) throughout integration in client projects.
+Later enhancements were made by [Ken Grigsby](https://github.com/kgrigsby59) and [Sohail Ahmed](http://sohail.io). UI/UX guidance was provided by [Salman Sajid](http://www.sajid.com) throughout integration in client projects (snazzier styling that unfortunately, we cannot bundle for you in this repo).
