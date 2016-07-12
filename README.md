@@ -14,6 +14,10 @@ The following animation takes you through the capabilities of the Example app bu
 
 ![Example App Demo](APPSPasscodeDemo.gif)
 
+On the iPad, the component still uses iPhone sized controls, centered on the iPad screen. Here's an example of that from the [PK-PD Compass](http://pkpdcompass.com) app for clinicians. It's also another example of the custom styling that's possible.
+
+![PKPD Compass App on iPad](APPSPasscodePKPDCompass.jpg)
+
 ## Default and Custom Styles
 You can change the visual appearance of the passcode (lines, colors, images) as suits the needs of your app. While the default style mimics Apple's own native iOS passcode control, we don't recommend you ship using that default style. It's only an example to provide you with a familiar starting point.
 
