@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "APPSPasscode"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "A reusable passcode subsystem for iOS apps."
   s.description  = <<-DESC
     A reusable passcode subsystem for iOS apps. This is used as a passcode foundation by Appstronomy for our own internal and client projects. We wanted to share our solution to a common need.
