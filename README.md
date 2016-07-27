@@ -1,7 +1,8 @@
 # APPSPasscode
 
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=5743719adb87810100cb593c&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/5743719adb87810100cb593c/build/latest)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![CocoaPods compatible](https://img.shields.io/cocoapods/v/APPSPasscode.svg)](https://img.shields.io/cocoapods/v/APPSPasscode.svg)
 
 # Introduction
 A reusable passcode subsystem for iOS apps. This is used as a passcode foundation by [Appstronomy](http://appstronomy.com) for our own internal and client projects. We wanted to share our solution to a common need.
