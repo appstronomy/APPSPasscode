@@ -271,6 +271,8 @@
 				TargetAttributes = {
 					4EEA317D1CF0C50B00D4ED0A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = RRQ5A84X9R;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -419,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RRQ5A84X9R;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -428,6 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstronomy.APPSPasscode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -435,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RRQ5A84X9R;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -444,6 +449,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstronomy.APPSPasscode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};

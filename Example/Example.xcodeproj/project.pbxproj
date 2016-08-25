@@ -27,6 +27,7 @@
 		4E3363071CF11C6D00DA5D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E3363091CF11C6D00DA5D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E6007B21CF369720061DD63 /* DemoUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoUser.swift; sourceTree = "<group>"; };
+		4E6D2D5E1D6FB5F800C88AB8 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
 		4E84DE881CF11D01000C3C94 /* APPSPasscode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APPSPasscode.framework; path = "../build/Debug-iphoneos/APPSPasscode.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +63,7 @@
 		4E3362FC1CF11C6D00DA5D83 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				4E6D2D5E1D6FB5F800C88AB8 /* Example.entitlements */,
 				4E1ED2A41CF32DDD008847B2 /* DemoPasscodeService.swift */,
 				4E6007B21CF369720061DD63 /* DemoUser.swift */,
 				4E3362FD1CF11C6D00DA5D83 /* AppDelegate.swift */,
@@ -106,6 +108,13 @@
 				TargetAttributes = {
 					4E3362F91CF11C6D00DA5D83 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = RRQ5A84X9R;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -263,10 +272,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
+				DEVELOPMENT_TEAM = RRQ5A84X9R;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstronomy.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -274,10 +286,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
+				DEVELOPMENT_TEAM = RRQ5A84X9R;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstronomy.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
