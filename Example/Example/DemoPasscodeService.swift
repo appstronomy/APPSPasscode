@@ -11,31 +11,31 @@ import APPSPasscode
 class DemoPasscodeService: APPSPasscodeService {
 
     enum PasscodeStyle: Int {
-        case Default
-        case Custom
+        case `default`
+        case custom
     }
     
-    var passcodeStyle = PasscodeStyle.Default
+    var passcodeStyle = PasscodeStyle.default
     var user: DemoUser?
     
     
-    func presentPasscodeChallenge(mode: APPSPasscodeMode) {
+    func presentPasscodeChallenge(_ mode: APPSPasscodeMode) {
         var configuration: APPSPasscodeViewConfiguration?
         
-        if passcodeStyle == .Custom {
+        if passcodeStyle == .custom {
             configuration = APPSPasscodeViewConfiguration()
             configuration!.topToLogoSpacing = 30
             configuration!.logoToInstructionLabelSpacing = 30
             
-            configuration!.rootViewBackgroundColor = UIColor.lightGrayColor()
-            configuration!.messageContainerBackgroundColor = UIColor.lightGrayColor()
-            configuration!.keypadBackgroundColor = UIColor.lightGrayColor()
+            configuration!.rootViewBackgroundColor = UIColor.lightGray
+            configuration!.messageContainerBackgroundColor = UIColor.lightGray
+            configuration!.keypadBackgroundColor = UIColor.lightGray
             
-            configuration!.keypadBackgroundColor = UIColor.grayColor()
-            configuration!.keypadNumericKeyDefaultColor = UIColor.grayColor()
-            configuration!.keypadNumericKeyHighlightColor = UIColor.darkGrayColor()
-            configuration!.keypadTextColor = UIColor.whiteColor()
-            configuration!.bulletColor = UIColor.darkGrayColor()
+            configuration!.keypadBackgroundColor = UIColor.gray
+            configuration!.keypadNumericKeyDefaultColor = UIColor.gray
+            configuration!.keypadNumericKeyHighlightColor = UIColor.darkGray
+            configuration!.keypadTextColor = UIColor.white
+            configuration!.bulletColor = UIColor.darkGray
         }
         
         let passcodeController = APPSPasscodeViewController()
@@ -44,8 +44,8 @@ class DemoPasscodeService: APPSPasscodeService {
         passcodeController.passcodeMode = mode
         
         // On the iPad present the view as 320x480
-        if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
-            passcodeController.modalPresentationStyle = .Custom
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            passcodeController.modalPresentationStyle = .custom
             passcodeController.transitioningDelegate = self
         }
 
@@ -55,27 +55,27 @@ class DemoPasscodeService: APPSPasscodeService {
     
     func passcodeExistsForUser() -> Bool {
         guard let user = user else { return false }
-        return APPSPasscodeCredentialsManager.sharedInstance().passcodeExistsForUser(user)
+        return APPSPasscodeCredentialsManager.sharedInstance().passcodeExists(forUser: user)
     }
     
     func clearPasscodeForUser() {
         guard let user = user else { return }
-        APPSPasscodeCredentialsManager.sharedInstance().removePasscodeForUser(user)
+        APPSPasscodeCredentialsManager.sharedInstance().removePasscode(forUser: user)
     }
     
     
     // MARK: APPSPasscodeViewControllerDelegate
     
-    override func passcodeViewControllerCanCancel(passcodeViewController: APPSPasscodeViewController) -> Bool {
+    override func passcodeViewControllerCanCancel(_ passcodeViewController: APPSPasscodeViewController) -> Bool {
         return true
     }
 
-    override func passcodeViewControllerDidCancel(passcodeViewController: APPSPasscodeViewController) {
+    override func passcodeViewControllerDidCancel(_ passcodeViewController: APPSPasscodeViewController) {
         rootViewController?.passcodeService(self, didRequestPasscodeControllerDismissalAnimated: true)
     }
     
     
-    override func passcodeViewController(passcodeViewController: APPSPasscodeViewController, didUpdateFromPasscode fromPasscode: String?, toPasscode: String) {
+    override func passcodeViewController(_ passcodeViewController: APPSPasscodeViewController, didUpdateFromPasscode fromPasscode: String?, toPasscode: String) {
         
         if let user = user {
             APPSPasscodeCredentialsManager.sharedInstance().setPasscodeFrom(fromPasscode, to: toPasscode, forUser: user)
@@ -87,17 +87,17 @@ class DemoPasscodeService: APPSPasscodeService {
     
     // Update/Authorizing
     
-    override func passcodeViewController(passcodeViewController: APPSPasscodeViewController, willAuthorizePasscode passcode: String) -> Bool {
+    override func passcodeViewController(_ passcodeViewController: APPSPasscodeViewController, willAuthorizePasscode passcode: String) -> Bool {
         guard let user = user else { return false }
         return APPSPasscodeCredentialsManager.sharedInstance().authorizePasscode(passcode, forUser: user)
     }
 
-    override func passcodeViewController(passcodeViewController: APPSPasscodeViewController, didFailToAuthorizePasscode passcode: String, failedAttemptCount: UInt) {
+    override func passcodeViewController(_ passcodeViewController: APPSPasscodeViewController, didFailToAuthorizePasscode passcode: String, failedAttemptCount: UInt) {
         NSLog("Failed to authorize %d times", failedAttemptCount)
     }
     
-    override func passcodeViewController(passcodeViewController: APPSPasscodeViewController, didAuthorizePasscode passcode: String) {
-        if passcodeViewController.passcodeMode == .Authorize {
+    override func passcodeViewController(_ passcodeViewController: APPSPasscodeViewController, didAuthorizePasscode passcode: String) {
+        if passcodeViewController.passcodeMode == .authorize {
             rootViewController?.passcodeService(self, didRequestPasscodeControllerDismissalAnimated: true)
         }
     }

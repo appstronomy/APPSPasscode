@@ -24,7 +24,7 @@ class InitialViewController: UIViewController {
     // MARK: Properties
     
     var passcodeService: DemoPasscodeService {
-        guard let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate else {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             fatalError("")
         }
         return appDelegate.passcodeService
@@ -50,18 +50,18 @@ class InitialViewController: UIViewController {
     }
     
     @IBAction func handleSetPasscodeButtonTap() {
-        passcodeService.presentPasscodeChallenge(.New)
+        passcodeService.presentPasscodeChallenge(.new)
     }
     
     @IBAction func handleUpdatePasscodeButtonTap() {
-        passcodeService.presentPasscodeChallenge(.Update)
+        passcodeService.presentPasscodeChallenge(.update)
     }
     
     @IBAction func handleAuthorizePasscodeButtonTap() {
-        passcodeService.presentPasscodeChallenge(.Authorize)
+        passcodeService.presentPasscodeChallenge(.authorize)
     }
     
-    @IBAction func handleStyleControlTap(sender: UISegmentedControl) {
+    @IBAction func handleStyleControlTap(_ sender: UISegmentedControl) {
         if let style = DemoPasscodeService.PasscodeStyle(rawValue: sender.selectedSegmentIndex) {
             passcodeService.passcodeStyle = style
         }
@@ -72,23 +72,23 @@ class InitialViewController: UIViewController {
     
     func updatePasscodeButtons() {
         let passcodeExists = passcodeService.passcodeExistsForUser()
-        clearPasscodeButton.enabled = passcodeExists
-        setPasscodeButton.enabled = !passcodeExists
-        updatePasscodeButton.enabled = passcodeExists
-        authorizePasscodeButton.enabled = passcodeExists
+        clearPasscodeButton.isEnabled = passcodeExists
+        setPasscodeButton.isEnabled = !passcodeExists
+        updatePasscodeButton.isEnabled = passcodeExists
+        authorizePasscodeButton.isEnabled = passcodeExists
     }
 }
 
 extension InitialViewController: APPSPasscodePresenter {
     
-    func passcodeService(passcodeService: APPSPasscodeService, didRequestPasscodeControllerPresentation passcodeViewController: APPSPasscodeViewController) -> Bool {
-        presentViewController(passcodeViewController, animated: true, completion: nil)
+    func passcodeService(_ passcodeService: APPSPasscodeService, didRequestPasscodeControllerPresentation passcodeViewController: APPSPasscodeViewController) -> Bool {
+        present(passcodeViewController, animated: true, completion: nil)
         return true
     }
     
-    func passcodeService(passcodeService: APPSPasscodeService, didRequestPasscodeControllerDismissalAnimated animated: Bool) -> Bool {
+    func passcodeService(_ passcodeService: APPSPasscodeService, didRequestPasscodeControllerDismissalAnimated animated: Bool) -> Bool {
         updatePasscodeButtons()
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
         return true
     }
 
