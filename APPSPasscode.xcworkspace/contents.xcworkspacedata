@@ -5,6 +5,6 @@
       location = "group:APPSPasscode.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Example/Example.xcodeproj">
+      location = "group:/Users/kgrigsby/Developer/Clients/APPSPasscode/Example/Passcode Example.xcodeproj">
    </FileRef>
 </Workspace>

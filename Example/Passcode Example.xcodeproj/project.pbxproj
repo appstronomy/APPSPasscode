@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		4E1ED2A41CF32DDD008847B2 /* DemoPasscodeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPasscodeService.swift; sourceTree = "<group>"; };
 		4E2ECCD51D8A13A70093B757 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
-		4E3362FA1CF11C6D00DA5D83 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E3362FA1CF11C6D00DA5D83 /* Passcode Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passcode Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3362FD1CF11C6D00DA5D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E3362FF1CF11C6D00DA5D83 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		4E3363021CF11C6D00DA5D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		4E3362FB1CF11C6D00DA5D83 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E3362FA1CF11C6D00DA5D83 /* Example.app */,
+				4E3362FA1CF11C6D00DA5D83 /* Passcode Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,9 +79,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4E3362F91CF11C6D00DA5D83 /* Example */ = {
+		4E3362F91CF11C6D00DA5D83 /* Passcode Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E33630C1CF11C6D00DA5D83 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildConfigurationList = 4E33630C1CF11C6D00DA5D83 /* Build configuration list for PBXNativeTarget "Passcode Example" */;
 			buildPhases = (
 				4E3362F61CF11C6D00DA5D83 /* Sources */,
 				4E3362F71CF11C6D00DA5D83 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = Example;
+			name = "Passcode Example";
 			productName = Example;
-			productReference = 4E3362FA1CF11C6D00DA5D83 /* Example.app */;
+			productReference = 4E3362FA1CF11C6D00DA5D83 /* Passcode Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4E3362F51CF11C6D00DA5D83 /* Build configuration list for PBXProject "Example" */;
+			buildConfigurationList = 4E3362F51CF11C6D00DA5D83 /* Build configuration list for PBXProject "Passcode Example" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -130,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4E3362F91CF11C6D00DA5D83 /* Example */,
+				4E3362F91CF11C6D00DA5D83 /* Passcode Example */,
 			);
 		};
 /* End PBXProject section */
@@ -280,7 +280,7 @@
 				DEVELOPMENT_TEAM = RRQ5A84X9R;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appstronomy.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appstronomy.PasscodeExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -294,7 +294,7 @@
 				DEVELOPMENT_TEAM = RRQ5A84X9R;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appstronomy.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appstronomy.PasscodeExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -303,7 +303,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4E3362F51CF11C6D00DA5D83 /* Build configuration list for PBXProject "Example" */ = {
+		4E3362F51CF11C6D00DA5D83 /* Build configuration list for PBXProject "Passcode Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E33630A1CF11C6D00DA5D83 /* Debug */,
@@ -312,7 +312,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E33630C1CF11C6D00DA5D83 /* Build configuration list for PBXNativeTarget "Example" */ = {
+		4E33630C1CF11C6D00DA5D83 /* Build configuration list for PBXNativeTarget "Passcode Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E33630D1CF11C6D00DA5D83 /* Debug */,
