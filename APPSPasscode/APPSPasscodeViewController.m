@@ -84,11 +84,13 @@ static const CGSize  kFormSheetTransitionPresentedViewSize = {.width = 320, .hei
 {
     [super viewDidLoad];
 
-    self.passcodeEntryViewController = [[APPSPasscodeEntryViewController alloc] initWithNibName:nil
-                                                                                         bundle:[NSBundle bundleForClass:APPSPasscodeEntryViewController.class]];
+    NSBundle *bundle = [NSBundle bundleForClass:APPSPasscodeEntryViewController.class];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:NSStringFromClass(APPSPasscodeEntryViewController.class) bundle:bundle];
+    
+    self.childNavigationController = [storyboard instantiateInitialViewController];
+    self.passcodeEntryViewController =  (APPSPasscodeEntryViewController *)self.childNavigationController.topViewController;
     self.passcodeEntryViewController.viewConfiguration = self.viewConfiguration;
-    self.childNavigationController   = [[UINavigationController alloc] initWithRootViewController:self.passcodeEntryViewController];
-    self.childNavigationController.navigationBar.translucent = NO;
+
     
     // Add the child VC dance
     [self addChildViewController:self.childNavigationController];

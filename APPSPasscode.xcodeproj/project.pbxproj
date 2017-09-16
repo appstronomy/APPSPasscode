@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E1CE6AE1D3938250039F157 /* APPSPasscodeEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E1CE6AA1D3938250039F157 /* APPSPasscodeEntryViewController.xib */; };
 		4E1CE6AF1D3938250039F157 /* DefaultLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E1CE6AB1D3938250039F157 /* DefaultLogo@2x.png */; };
 		4E1CE6B01D3938250039F157 /* Icon-KeypadDelete-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E1CE6AC1D3938250039F157 /* Icon-KeypadDelete-normal.png */; };
 		4E1CE6B11D3938250039F157 /* Icon-KeypadDelete-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E1CE6AD1D3938250039F157 /* Icon-KeypadDelete-normal@2x.png */; };
+		4EA512A71F6D8DFF0065CCCE /* APPSPasscodeEntryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA512A61F6D8DFF0065CCCE /* APPSPasscodeEntryViewController.storyboard */; };
 		4EEA31821CF0C50B00D4ED0A /* APPSPasscode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA31811CF0C50B00D4ED0A /* APPSPasscode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4EEA31D11CF0CAAD00D4ED0A /* APPSFormSheetTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEA31B91CF0CAAD00D4ED0A /* APPSFormSheetTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4EEA31D21CF0CAAD00D4ED0A /* APPSFormSheetTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEA31BA1CF0CAAD00D4ED0A /* APPSFormSheetTransition.m */; };
@@ -38,10 +38,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4E1CE6AA1D3938250039F157 /* APPSPasscodeEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APPSPasscodeEntryViewController.xib; sourceTree = "<group>"; };
 		4E1CE6AB1D3938250039F157 /* DefaultLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DefaultLogo@2x.png"; sourceTree = "<group>"; };
 		4E1CE6AC1D3938250039F157 /* Icon-KeypadDelete-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-KeypadDelete-normal.png"; sourceTree = "<group>"; };
 		4E1CE6AD1D3938250039F157 /* Icon-KeypadDelete-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-KeypadDelete-normal@2x.png"; sourceTree = "<group>"; };
+		4EA512A61F6D8DFF0065CCCE /* APPSPasscodeEntryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = APPSPasscodeEntryViewController.storyboard; sourceTree = "<group>"; };
 		4EEA317E1CF0C50B00D4ED0A /* APPSPasscode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APPSPasscode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEA31811CF0C50B00D4ED0A /* APPSPasscode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPSPasscode.h; sourceTree = "<group>"; };
 		4EEA31831CF0C50B00D4ED0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		4E1CE6A91D3938250039F157 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4E1CE6AA1D3938250039F157 /* APPSPasscodeEntryViewController.xib */,
+				4EA512A61F6D8DFF0065CCCE /* APPSPasscodeEntryViewController.storyboard */,
 				4E1CE6AB1D3938250039F157 /* DefaultLogo@2x.png */,
 				4E1CE6AC1D3938250039F157 /* Icon-KeypadDelete-normal.png */,
 				4E1CE6AD1D3938250039F157 /* Icon-KeypadDelete-normal@2x.png */,
@@ -300,7 +300,7 @@
 			files = (
 				4E1CE6B01D3938250039F157 /* Icon-KeypadDelete-normal.png in Resources */,
 				4E1CE6B11D3938250039F157 /* Icon-KeypadDelete-normal@2x.png in Resources */,
-				4E1CE6AE1D3938250039F157 /* APPSPasscodeEntryViewController.xib in Resources */,
+				4EA512A71F6D8DFF0065CCCE /* APPSPasscodeEntryViewController.storyboard in Resources */,
 				4E1CE6AF1D3938250039F157 /* DefaultLogo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
